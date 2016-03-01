@@ -1,10 +1,54 @@
-.dish {
-  margin-left: 25px;
-  width: 300px;
-  height: 200px;
-  float: left;
+#dishes {
+  width: 67%;
 }
 
-#lammkott {
+#selection {
+  position: fixed;
+  z-index: 8;
+  float: right;
+  top: 0;
+  right: 0;
+
+  width: 33%;
+  height: 100%;
+
+  padding-top: 64px;
+
+  background-color: coral;
+}
+
+#dishes > div {
+  margin: 0 auto;
+}
+
+.dish {
+  position: relative;
+  display: inline-block;
+
+  height: 25%;
+  width: 24%;
+  min-width: 250px;
+  min-height: 200px;
+
+  float: left;
+
+  overflow: hidden;
+}
+
+.dish > .img_con {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+.dish > .img_con > img {
   
+  object-fit: cover;
+}
+
+.dish > p {
+  bottom: 0;
 }

@@ -3,7 +3,7 @@
 	padding: 0;
 }
 
-body {
+html, body {
 	height: 100%;
 }
 
@@ -138,8 +138,4 @@ header{
 	#navnarrow ul li:hover {
 		background-color: #da8500;
 	}
-}
-
-section {
-	min-width: 330px;
 }

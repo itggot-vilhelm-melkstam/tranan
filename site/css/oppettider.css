@@ -1,0 +1,20 @@
+#times {
+  width: 66%;
+  height: calc(100% - 64px);
+}
+
+#times .column {
+  font-family: 'Roboto', sans-serif;
+  float: left;
+  width: 12.5%;
+  height: 100%;
+}
+#times .column div {
+  text-align: center;
+  min-height: 20px;
+  height: calc(100% / 11);
+  line-height: 100%;
+}
+#times .column div p{
+
+}
