@@ -14,41 +14,67 @@
 
   padding-top: 64px;
 
-  background-color: coral;
+  background-color: #8B2301;
 }
 
 #dishes > div {
+  display: inline-block;
   margin: 0 auto;
+}
+
+#dishes > div > h1 {
+  margin-left: 8px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 32px;
+  line-height: 48px;
 }
 
 .dish {
   position: relative;
   display: inline-block;
 
+  margin: 8px;
+
   height: 25%;
-  width: 24%;
+  width: 22.5%;
   min-width: 250px;
   min-height: 200px;
 
   float: left;
 
   overflow: hidden;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
-.dish > .img_con {
+.dish_shadow {
+  position: absolute;
+  top: 0;
+
   width: 100%;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  height: 48px;
 
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.dish > .img_con > img {
-  
-  object-fit: cover;
+.dish_shadow > p {
+  margin-left: 8px;
+
+  color: white;
+
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 40px;
 }
 
-.dish > p {
-  bottom: 0;
-}
+#lammkott { background-image: url("../img/dishes/lammkott.jpg"); }
+#flaskfile { background-image: url("../img/dishes/flaskfile.jpg"); }
+#hamburgare { background-image: url("../img/dishes/hamburgare.jpg"); }
+#kycklingspett { background-image: url("../img/dishes/kycklingspett.jpg"); }
+#oxfile { background-image: url("../img/dishes/oxfile.jpg"); }
+#villegryta { background-image: url("../img/dishes/villegryta.jpg"); }
